@@ -1,0 +1,20 @@
+{
+    "Rules": [
+        {
+            "Expiration": {
+                "Days": 2
+            },
+            "ID": "Remove all objects after 2 days",
+            "Filter": {
+                "Prefix": ""
+            },
+            "Status": "Enabled",
+            "NoncurrentVersionExpiration": {
+                "NoncurrentDays": 1
+            },
+            "AbortIncompleteMultipartUpload": {
+                "DaysAfterInitiation": 1
+            }
+        }
+    ]
+}
