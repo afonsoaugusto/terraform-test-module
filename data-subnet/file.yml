@@ -1,0 +1,58 @@
+vpc:
+  cidr: "10.0.0.0/16"
+  id: "vpc-4c86142a"
+  subnets:
+    private:
+      us-east-1a:
+        id: "subnet-066984515fc51b8cf"
+      us-east-1b:
+        id: "subnet-00bb82ae12b841365"
+      us-east-1c:
+        id: "subnet-0ce458ac29d7aeadf"
+
+
+vpc:
+  id: "vpc-4c86142a"
+  cidr: "10.0.0.0/16"
+  subnets:
+    private:
+      "us-east-1a":
+  "filter":
+  - "name": "availabilityZone"
+    "values":
+    - "us-east-1a"
+  - "name": "tag:mm_product"
+    "values":
+    - "1"
+  "id": "vpc-4c86142a"
+  "ids":
+  - "subnet-066984515fc51b8cf"
+  "tags": null
+  "vpc_id": "vpc-4c86142a"
+"us-east-1b":
+  "filter":
+  - "name": "availabilityZone"
+    "values":
+    - "us-east-1b"
+  - "name": "tag:mm_product"
+    "values":
+    - "1"
+  "id": "vpc-4c86142a"
+  "ids":
+  - "subnet-00bb82ae12b841365"
+  "tags": null
+  "vpc_id": "vpc-4c86142a"
+"us-east-1c":
+  "filter":
+  - "name": "availabilityZone"
+    "values":
+    - "us-east-1c"
+  - "name": "tag:mm_product"
+    "values":
+    - "1"
+  "id": "vpc-4c86142a"
+  "ids":
+  - "subnet-0ce458ac29d7aeadf"
+  "tags": null
+  "vpc_id": "vpc-4c86142a"
+
