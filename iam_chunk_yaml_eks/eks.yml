@@ -1,0 +1,43 @@
+
+iam:
+  serviceAccounts:
+  - metadata:
+      name: "aws-load-balancer-controller"
+      namespace: "kube-system"
+  - metadata:
+      name: "external-dns"
+      namespace: "kube-system"
+  - metadata:
+      name: "cert-manager"
+      namespace: "cert-manager"
+  - metadata:
+      name: "spring-cloud-data-flow"
+      namespace: "spring-cloud-data-flow"
+  - metadata:
+      name: "eks-logs-kcloud-2309"
+      namespace: "eks-logs-kcloud-2309"
+  withOIDC: true
+
+
+iam:
+  withOIDC: true
+  serviceAccounts:
+  - metadata:
+      name: aws-load-balancer-controller
+      namespace: kube-system
+    wellKnownPolicies:
+      awsLoadBalancerController: true
+  - metadata:
+      name: external-dns
+      namespace: kube-system
+    wellKnownPolicies:
+      externalDNS: true
+  - metadata:
+      name: cert-manager
+      namespace: cert-manager
+    wellKnownPolicies:
+      certManager: true
+  - metadata:
+      name: 312
+      namespace: 31
+    attachRoleARN: 123
