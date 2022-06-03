@@ -1,0 +1,17 @@
+acm = {
+  "arn" = "arn:aws:acm:us-east-1:516669511250:certificate/9505a5ae-9a55-46e9-acb1-151214062d7c"
+  "certificate" = <<-EOT  
+  EOT
+  "certificate_chain" = <<-EOT
+  EOT
+  "domain" = "maxmilhas.com.br"
+  "id" = "arn:aws:acm:us-east-1:516669511250:certificate/9505a5ae-9a55-46e9-acb1-151214062d7c"
+  "key_types" = toset(null) /* of string */
+  "most_recent" = false
+  "status" = "ISSUED"
+  "statuses" = tolist([
+    "ISSUED",
+  ])
+  "tags" = tomap({})
+  "types" = tolist(null) /* of string */
+}
